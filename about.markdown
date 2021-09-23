@@ -4,15 +4,12 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hi, I'm Aaron Qian.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+**I help software engineers achieve career goals.** I believe there are often overlooked, but effective ways to advance your career without burning yourself out.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+I'm a software engineer coach, a veteran software architect, and a custom software solutions consultant. I have been in the software startup industry since 2006. I started out as a software test engineer and slowly progressed to architect position over the years. Since 2021, I started my own consulting practice to help software engineers to advance their careers.
 
+On this site, you will find my daily tips that will help you grow as a software engineer quickly and effectively. These tips will include a mix of technical and nontechnical topics. 
 
-[jekyll-organization]: https://github.com/jekyll
+I hope my lifetime of learnings in the software industry can be a small beacon to guide you on the misty landscape of software career.
