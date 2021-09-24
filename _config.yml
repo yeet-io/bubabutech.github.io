@@ -28,6 +28,9 @@ url: "https://softwareunicorns.com" # the base hostname & protocol for your site
 twitter_username: softwareunicorns
 github_username:  softwareunicorns
 google_analytics: G-CR6HY18MJR
+header_pages:
+  - daily-tips.html
+  - about.md
 
 # Build settings
 theme: minima
