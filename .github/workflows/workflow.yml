@@ -21,6 +21,9 @@ jobs:
       - name: 🔨 build site
         run: bundle exec jekyll build
 
+      - name: 🔨 Add CNAME file
+        run: cp ./CNAME ./_site/CNAME
+
       - name: 🚀 deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
