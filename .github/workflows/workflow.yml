@@ -3,7 +3,7 @@ name: Build and deploy jekyll site
 on:
   push:
     branches:
-      - main
+      - source
 
 jobs:
   jekyll:
@@ -27,6 +27,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
-          # if the repo you are deploying to is <username>.github.io, uncomment the line below.
-          # if you are including the line below, make sure your source files are NOT in the master branch:
-          # publish_branch: master
+          publish_branch: master
