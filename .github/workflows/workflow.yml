@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: 🧰 install zola
-        uses: brew install zola
+        run: brew install zola
 
       - name: 🔨 build site
         run: zola build
