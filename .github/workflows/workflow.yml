@@ -3,27 +3,27 @@ name: Build and deploy jekyll site
 on:
   push:
     branches:
-      - source
+      - zola
 
 jobs:
   jekyll:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
-      - name: 📂 setup
+      - name: 📂 chckout
         uses: actions/checkout@v2
 
-      - name: 💎 setup ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 3.0.2
-          bundler-cache: true
+      - name: 🧰 install zola
+        uses: brew install zola
 
       - name: 🔨 build site
-        run: bundle exec jekyll build
+        run: zola build
+
+      - name: ✨ Add CNAME file
+        run: cp ./CNAME ./_site/CNAME
 
       - name: 🚀 deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+          publish_dir: ./public
           publish_branch: main
