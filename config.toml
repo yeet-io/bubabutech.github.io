@@ -1,5 +1,7 @@
 # The URL the site will be built for
 base_url = "https://softwareunicorns.com"
+title = "Software Unicorns"
+title_icon = "unicorn"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -44,7 +46,7 @@ avatar = "/images/avatar.png"
 
 # Social links
 [extra.social]
-# email = "<email_id>"
+email = "aaron@bubabutech.com"
 # facebook = "<facebook_username>"
 # github = "<github_username>"
 # gitlab = "<gitlab_username>"
@@ -60,7 +62,7 @@ avatar = "/images/avatar.png"
 
 # To add google analytics
 [extra.analytics]
-google = "<your_gtag>"
+google = "G-CR6HY18MJR"
 
 # To add disqus comments
 [extra.commenting]
