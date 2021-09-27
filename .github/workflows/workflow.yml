@@ -1,4 +1,4 @@
-name: Build and deploy jekyll site
+name: Deploy Zola Site
 
 on:
   push:
@@ -6,24 +6,13 @@ on:
       - zola
 
 jobs:
-  jekyll:
-    runs-on: macos-latest
+  zola:
+    runs-on: ubuntu-latest
     steps:
-      - name: 📂 chckout
+      - name: 📂 checkout
         uses: actions/checkout@v2
 
-      - name: 🧰 install zola
-        run: brew install zola
-
-      - name: 🔨 build site
-        run: zola build
-
-      - name: ✨ Add CNAME file
-        run: cp ./CNAME ./_site/CNAME
-
-      - name: 🚀 deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          publish_branch: main
+      - name: 🚀 build & deploy
+        uses: shalzz/zola-deploy-action@master
+        env:
+          TOKEN: ${{ secrets.ZOLA_DEPLOY_TOKEN }}
