@@ -1,0 +1,48 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: home
+---
+
+<style>
+  .subscribe-form {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  .subscribe-form input {
+    vertical-align: middle;
+    font-size: 1rem;
+    font-family: inherit;
+    color: #111;
+  }
+
+  .subscribe-form input[type="email"] {
+    flex: 1;
+    margin: 5px 10px 5px 0;
+    padding: 1rem;
+    border: 1px solid #e8e8e8;
+  }
+
+  .subscribe-form input[type="submit"] {
+    padding: 1rem 2rem;
+    background-color: dodgerblue;
+    border: 1px solid #ddd;
+    color: white;
+  }
+</style>
+
+<p>Hi, I’m Aaron Qian.</p>
+
+<p data-drip-attribute="description" >{{ site.description }}</p>
+
+<p data-drip-attribute="headline">
+  Subscribe to my daily tips to get fresh insights on becoming a Software Unicorn.
+</p>
+
+<form class="subscribe-form" action="https://www.getdrip.com/forms/475128328/submissions" method="post" data-drip-embedded-form="475128328">
+  <input type="email" name="fields[email]" placeholder="Email">
+  <input type="submit" value="Subscribe" data-drip-attribute="sign-up-button">
+</form>
