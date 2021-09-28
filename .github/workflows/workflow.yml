@@ -3,7 +3,7 @@ name: Deploy Zola Site
 on:
   push:
     branches:
-      - zola
+      - main
 
 jobs:
   zola:

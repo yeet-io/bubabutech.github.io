@@ -41,19 +41,19 @@ webmanifest = "/icons/site.webmanifest"
 
 # Author details
 [extra.author]
-name = "DeepThought"
+name = "Aaron Qian"
 avatar = "/images/avatar.png"
 
 # Social links
 [extra.social]
 email = "aaron@bubabutech.com"
-# facebook = "<facebook_username>"
-# github = "<github_username>"
+facebook = "aq1018"
+github = "aq1018"
 # gitlab = "<gitlab_username>"
 # keybase = "<keybase_username>"
-# linkedin = "<linkedin_username>"
-# stackoverflow = "<stackoverflow_userid>"
-# twitter = "<twitter_username>"
+linkedin = "aaronqian"
+stackoverflow = "86288"
+twitter = "aq1018"
 # instagram = "<instagram_usernaem>"
 # behance = "<behance_username>"
 # google_scholar = "<googlescholar_userid>"

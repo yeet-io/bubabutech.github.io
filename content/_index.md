@@ -1,6 +1,6 @@
 +++
 title = "Software Unicorns"
-description = "I help software engineers achieve career goals."
+description = "I help software engineers become software unicorns."
 +++
 
 
