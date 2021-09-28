@@ -25,7 +25,6 @@ highlight_code = false
 # Put all your custom variables here
 navbar_items = [
  { code = "en", nav_items = [
-  { url = "$BASE_URL/", name = "Home" },
   { url = "$BASE_URL/about", name = "About" },
   { url = "$BASE_URL/daily-tips", name = "Daily Tips" },
  ]},
@@ -42,7 +41,7 @@ webmanifest = "/icons/site.webmanifest"
 # Author details
 [extra.author]
 name = "Aaron Qian"
-avatar = "/images/avatar.png"
+avatar = "/images/aaronqian.png"
 
 # Social links
 [extra.social]
