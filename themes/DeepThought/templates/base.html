@@ -72,7 +72,9 @@
   <nav aria-label="section navigation" class="navbar is-light" role="navigation">
     <div class="container">
       <div class="navbar-brand">
+        {% block navbar_brand %}
         <a class="navbar-item is-size-5 has-text-weight-bold" href="{{config.base_url}}">{{ config.title }}</a>
+        {% endblock %}
         <a aria-expanded="false" aria-label="menu" class="navbar-burger burger" data-target="navMenu" role="button">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -90,16 +92,22 @@
           {% endfor %}
           {% endif %}
           {% endfor %}
+
+          {% if config.build_search_index %}
           <a class="navbar-item" id="nav-search" title="Search" data-target="#search-modal">
             <span class="icon">
               <i class="fas fa-search"></i>
             </span>
           </a>
+          {% endif %}
+
+          {% if config.extra.toggle_dark_theme %}
           <a class="navbar-item" id="dark-mode" title="Switch to dark theme">
             <span class="icon">
               <i class="fas fa-adjust"></i>
             </span>
           </a>
+          {% endif %}
         </div>
       </div>
     </div>
@@ -109,6 +117,7 @@
   {% endblock %}
 
   {% block search %}
+  {% if config.build_search_index %}
   <section class="modal" id="search-modal">
     <div class="modal-background"></div>
     <div class="modal-card">
@@ -128,6 +137,7 @@
     </div>
     <button aria-label="close" class="modal-close is-large"></button>
   </section>
+  {% endif %}
   {% endblock %}
 
 
@@ -166,6 +176,7 @@
   {% block comment %}
   {% endblock %}
 
+  {% block footer %}
   <footer class="footer py-4">
     <div class="content has-text-centered">
       <p>
@@ -195,6 +206,7 @@
       </p>
     </div>
   </footer>
+  {% endblock %}
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/galleria.min.js"></script>
@@ -203,7 +215,9 @@
   <script src="https://cdn.jsdelivr.net/npm/mapbox-gl@2.1.1/dist/mapbox-gl.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/themes/folio/galleria.folio.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js"></script>
+  {% if config.build_search_index %}
   <script src="{{ get_url(path='search_index.en.js') }}"></script>
+  {% endif %}
   <script src="{{ get_url(path='js/site.js') }}"></script>
 
   {% block custom_js %}

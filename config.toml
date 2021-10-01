@@ -1,34 +1,28 @@
-# The URL the site will be built for
 base_url = "https://softwareunicorns.com"
-title = "Software Unicorns"
-title_icon = "unicorn"
-
-# Whether to automatically compile all Sass files in the sass directory
-compile_sass = true
-
-# Whether to build a search index to be used later on by a JavaScript library
-build_search_index = false
-
 theme = "DeepThought"
-
 taxonomies = [
     { name = "categories" },
     { name = "tags" },
 ]
 
+[languages.en]
+compile_sass = true
+build_search_index = false
+title = "Software Unicorns"
+
+
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = false
+highlight_code = true
 
 [extra]
-# Put all your custom variables here
 navbar_items = [
  { code = "en", nav_items = [
   { url = "$BASE_URL/about", name = "About" },
   { url = "$BASE_URL/daily-tips", name = "Daily Tips" },
  ]},
 ]
+
+toggle_dark_theme = false
 
 # Add links to favicon, you can use https://realfavicongenerator.net/ to generate favicon for your site
 [extra.favicon]
