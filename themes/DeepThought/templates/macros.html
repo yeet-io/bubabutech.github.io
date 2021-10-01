@@ -96,7 +96,7 @@
     </span>
   </a>
   {% endif %}
-  
+
   {% if social_config.medium %}
   <a href="https://medium.com/@{{ social_config.medium }}" target="_blank">
     <span class="icon is-large" title="Medium">
@@ -128,7 +128,14 @@
   <span class="icon">
     <i class="fas fa-user"></i>
   </span>
-  <span>{{ config.extra.author.name }} published on</span>
+  <span>
+    {% if page.extra.author %}
+      {{ page.extra.author }}
+    {% else %}
+      {{ config.extra.author.name }}
+    {% endif %}
+  published on
+  </span>
   <span class="icon">
     <i class="far fa-calendar-alt"></i>
   </span>
