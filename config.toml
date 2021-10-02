@@ -1,8 +1,6 @@
 base_url = "https://softwareunicorns.com"
-theme = "DeepThought"
 taxonomies = [
     { name = "categories" },
-    { name = "tags" },
 ]
 
 [languages.en]
