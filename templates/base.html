@@ -38,7 +38,7 @@
     {% endblock title %}
   </title>
 
-  {% if config.extra.analytics.google %}
+  {% if config.extra.analytics.google and not '127.0.0.1' in config.base_url and not 'localhost' in config.base_url %}
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.extra.analytics.google }}"></script>
   <script type="text/javascript">
     window.dataLayer = window.dataLayer || [];
