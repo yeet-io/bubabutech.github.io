@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://softwareunicorns.com/sitemap.xml

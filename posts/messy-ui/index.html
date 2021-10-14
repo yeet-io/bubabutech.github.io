@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="#ffffff" name="theme-color" />
+  <meta content="#da532c" name="msapplication-TileColor" />
+
+  
+  <link href='&#x2F;icons&#x2F;site.webmanifest' rel="manifest" />
+  
+  
+  <link color="#5bbad5" href='&#x2F;icons&#x2F;safari-pinned-tab.svg' rel="mask-icon" />
+  
+  
+  <link href='&#x2F;icons&#x2F;favicon-16x16.png' rel="icon" sizes="16x16" type="image/png" />
+  
+  
+  <link href='&#x2F;icons&#x2F;favicon-32x32.png' rel="icon" sizes="32x32" type="image/png" />
+  
+  
+  <link href='&#x2F;icons&#x2F;apple-touch-icon.png' rel="apple-touch-icon" sizes="180x180" />
+  
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/themes/folio/galleria.folio.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/mapbox-gl@2.1.1/dist/mapbox-gl.min.css" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" rel="stylesheet" />
+  <link href="https://softwareunicorns.com/deep-thought.css" rel="stylesheet" />
+
+  <title>
+    
+Software Unicorns | Messy UI? Here Is A Solution
+
+  </title>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CR6HY18MJR"></script>
+  <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-CR6HY18MJR");
+  </script>
+  
+
+  
+</head>
+
+<body class="has-background-white">
+  <nav aria-label="section navigation" class="navbar is-light" role="navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        
+        <a class="navbar-item is-size-5 has-text-weight-bold" href="https:&#x2F;&#x2F;softwareunicorns.com">Software Unicorns</a>
+        
+        <a aria-expanded="false" aria-label="menu" class="navbar-burger burger" data-target="navMenu" role="button">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-end has-text-centered">
+          
+          
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;softwareunicorns.com&#x2F;about">
+            About
+          </a>
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;softwareunicorns.com&#x2F;posts">
+            Posts
+          </a>
+          
+          
+          
+
+          
+
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+  
+
+  
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8 is-offset-2">
+        <article class="block">
+          <h1 class="title is-3">
+            Messy UI? Here Is A Solution
+          </h1>
+          <p class="subtitle is-5">Think In Components, Not HTML &amp; CSS</p>
+          <div class="columns is-multiline is-gapless">
+            <div class="column is-8">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="fas fa-user"></i>
+  </span>
+  <span>
+    
+      Aaron Qian
+    
+  published on
+  </span>
+  <span class="icon">
+    <i class="far fa-calendar-alt"></i>
+  </span>
+  <span><time datetime="2021-10-04">October 04, 2021</time></span>
+</span>
+
+            </div>
+            <div class="column is-4 has-text-right-desktop">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="far fa-clock"></i>
+  </span>
+  <span>6 min,</span>
+  <span class="icon">
+    <i class="fas fa-pencil-alt"></i>
+  </span>
+  <span>1181 words</span>
+</span>
+
+            </div>
+            <div class="column">
+              
+              
+<p>
+  Categories:
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="https://softwareunicorns.com/categories/strategies/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-cube"></i>
+      </span>
+      <span>strategies</span>
+    </span>
+  </a>
+  
+</p>
+
+              
+            </div>
+            <div class="column has-text-right-desktop">
+              
+            </div>
+          </div>
+          <div class="content mt-2">
+            <p>Have you ever heard a designer telling a developer:</p>
+<blockquote>
+<p>Your margin on this widget is 3 pixels off, the font size on this button is too big, the font color is not right shade, and the text didn't change color when hovering over the button.</p>
+</blockquote>
+<p>The designer have to make sure his design is always consistent, or else the developer is going to implement it inconsistently. The designer will have to double check the developer's work to ensure the final product is correct. The developer will have to adjust his CSS and HTML to make it pass the Design Team, but occasionally, his changes break another page because he didn't know changing the CSS in one spot could affect some widget in a completely different page. And the cycle repeats itself.</p>
+<p>This kind of communication very inefficient for both the design team and the development team. It produces messy and inconsistent UI, it takes a long time for a feature to pass QA. Yet I have seen this problem crop up in many companies I have worked with. </p>
+<p>Now let's imagine a different conversation:</p>
+<blockquote>
+<p>This widget uses the <strong>PricingPlan Component</strong>. That button is a <strong>Button Component</strong> with <strong>secondary variant</strong> and <strong>small size</strong>.</p>
+</blockquote>
+<p>The conversation is no longer about specific sizes in pixels or colors in hex. The designer and the developer both have a common language, and that language is call the <strong>Design Language</strong>. The specific margins, color shades, and sizes are predefined and agreed upon. </p>
+<p><strong>Component Libraries</strong> based on the Design Language are available for developers to implement the designs quickly and consistently. The features can be churned out quickly with minimal revisions. The designer trusts the developer's implementations. The UI looks consistent throughout the site, and new features gets pushed to production without much revisions.</p>
+<p>This is all thanks to a <strong>Design System</strong> shared between the design and development team.</p>
+<h2 id="what-is-a-design-system">What is a Design System?</h2>
+<p>So what is a Design System? Quoting from Wikipedia:</p>
+<blockquote>
+<p>A Design System is a set of interconnected patterns and shared practices coherently organized. Design Systems aid in digital product design and development of products such as apps or websites. They may contain, but are not limited to, pattern libraries, design languages, style guides, coded components, brand languages, and documentation.</p>
+</blockquote>
+<p>To put it in simpler terms, a Design System allows designers and developers communicate efficiently.</p>
+<p>Some well known Design Systems includes:</p>
+<ul>
+<li><a href="https://material.io/components">Material Design</a> by Google</li>
+<li><a href="https://developer.microsoft.com/en-us/fluentui#/">Fluent</a> by Microsoft</li>
+<li><a href="https://www.lightningdesignsystem.com/">Lightning</a> by Salesforce</li>
+<li><a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/">Bootstrap</a> by Twitter</li>
+<li><a href="https://bulma.io/">Bulma</a> by Jeremy Thomas</li>
+</ul>
+<p>Note, Bootstrap and Bulma are not full fledged Design Systems. But many companies use them as a starting point to create their own Design Systems.</p>
+<p>Ok, enough about Design Systems. How can I achieve product consistency and development efficiency by adopting a Design System for my teams?</p>
+<h2 id="initial-collaboration">Initial Collaboration</h2>
+<p>From here on, I'm going to assume an existing Design System, such as <a href="https://material.io/components">Material Design</a>, is used as the basis for your company. You can also create a new Design System from scratch, but that will take significant resources and is not suggested.</p>
+<p>The Design Team needs to decide on which Design Language or Design Framework to use. The Development Team needs to weigh in on that decision because they will need to decide on an existing component library implementing the chosen Design Language to customize to fit into the Design Language.</p>
+<p>For example, the Design Team decides to use <a href="https://material.io/components">Material Design</a> as the base. The Development Team primarily uses React as the front end framework, and thus chose <a href="https://mui.com/">material-ui</a> as the basis for their Component Library. It is a good choice because it offers <a href="https://mui.com/customization/theming/">global theme support</a>. It also allows <a href="https://mui.com/customization/how-to-customize/">customization on the component level</a>. It also offers a large set of <a href="https://mui.com/customization/how-to-customize/">components</a>, as well as <a href="https://github.com/gregnb/mui-datatables">many</a> <a href="https://www.npmjs.com/package/@mui/lab">extensions</a>.</p>
+<p>Whatever component library your team ends up choosing, there are limits to how much customization it supports. Thus Design Team must work with Development Team to pick something that can ensure all the customizations can be done easily and efficiently in the component library.</p>
+<h2 id="design-team-goals">Design Team Goals</h2>
+<p>After the base Design System is chosen, the design team can move on to the following goals.</p>
+<h3 id="catalog-components">Catalog Components</h3>
+<p>It is important to know how many components and variants your product uses. The design team should catalog all components used on the site. All products should be based off of those components.</p>
+<h3 id="design-components">Design Components</h3>
+<p>After components are categorized, the designer can now create those components in their design tools. <a href="https://www.figma.com/">Figma</a> is a popular used by design teams to collaborate on design work. It has <a href="https://help.figma.com/hc/en-us/articles/360038662654-Guide-to-Components-in-Figma">reusable component support</a>, allowing designers to design and reuse components collaboratively.</p>
+<h3 id="reuse-components">Reuse Components</h3>
+<p>When all the individual components are created in the design tools, all new designs should reuse existing components. If there is a need, new components or variants of existing components can be added. However, designers should no longer directly use position and color values. They should all be defined inside components.</p>
+<h2 id="development-team-goals">Development Team Goals</h2>
+<p>After the base Design System is chosen, the development team can move on to the following goals.</p>
+<h3 id="choose-component-library">Choose Component Library</h3>
+<p>An existing open source component library such as <a href="https://mui.com/">material-ui</a> should be chosen at this stage. Developers should be encouraged to learn about this new library.</p>
+<h3 id="implement-theme-extension">Implement Theme Extension</h3>
+<p>At this stage, developers should create a new theme package that can be used to customize the base component library to suit the company Design Language. The theme should be its own npm package, hosted privately, that can be shared and reused across different frontend projects.</p>
+<p>A <a href="https://storybook.js.org/">storybook</a> should also be created and provisioned to display all the different components from the component library with themes applied. If you use Figma as a development tool, you can use the <a href="https://help.figma.com/hc/en-us/articles/360045003494-Storybook-and-Figma">Figma Addon for Storybook</a> to make sure component design and implementation are always in sync.</p>
+<h3 id="extend-component-library">Extend Component Library</h3>
+<p>It's very likely that your base component library does not include all the components the design team catalogued. This is when a component library extension is needed. Depending on the need, your development team can create an extension library to host all the extra components not covered by the base library. It can then be packaged as an npm component and shared across your projects.</p>
+<h3 id="reuse-component-library">Reuse Component Library</h3>
+<p>Finally, once the component library is setup, themes are implemented, and extensions are built, your development team can implement new features based purely on components. It's also a good time to start refactoring old pages to new component-based implementations. Now you will have a beautiful, consistent UI. Your design and development team will also see increased product delivery and your employees will be happier.</p>
+
+          </div>
+        </article>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+  
+  
+  
+
+
+  
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <nav class="level">
+          
+          <div class="level-item has-text-centered">
+            <a class="button is-black is-outlined" href="https:&#x2F;&#x2F;softwareunicorns.com&#x2F;posts&#x2F;flutter-development-environment-ios-and-android&#x2F;">
+              <span class="icon mr-2">
+                <i class="fas fa-arrow-circle-left"></i>
+              </span>
+              Flutter Tutorial: Development Environment Setup
+            </a>
+          </div>
+           
+          <div class="level-item has-text-centered">
+            <a class="button is-black is-outlined" href="https:&#x2F;&#x2F;softwareunicorns.com&#x2F;posts&#x2F;graphql-typedi-data-loaders-and-scoped-containers&#x2F;">
+              Optimize Graphql Query Performance Using Data Loader<span class="icon ml-2">
+                <i class="fas fa-arrow-circle-right"></i>
+              </span>
+            </a>
+          </div>
+            
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div id="disqus_thread"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  
+  <footer class="footer py-4">
+    <div class="content has-text-centered">
+      <p>
+        Built with
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-code"></i>
+          </span>
+          <span>code</span>
+        </span>
+        and
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-heart"></i>
+          </span>
+          <span>love</span>
+        </span>
+      </p>
+      <p>
+        Powered by
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-power-off"></i>
+          </span>
+          <span>zola</span>
+        </span>
+      </p>
+    </div>
+  </footer>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/galleria.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@8.9.2/dist/mermaid.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.xkcd@1.1.13/dist/chart.xkcd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mapbox-gl@2.1.1/dist/mapbox-gl.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/themes/folio/galleria.folio.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js"></script>
+  
+  <script src="https://softwareunicorns.com/js/site.js"></script>
+
+  
+
+
+
+<script>
+  var disqus_config = function () {
+    this.page.url = "https://softwareunicorns.com";
+    this.page.identifier = "/posts/messy-ui/";
+  };
+
+  (function () {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://softwareunicorns.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="#ffffff" name="theme-color" />
+  <meta content="#da532c" name="msapplication-TileColor" />
+
+  
+  <link href='&#x2F;icons&#x2F;site.webmanifest' rel="manifest" />
+  
+  
+  <link color="#5bbad5" href='&#x2F;icons&#x2F;safari-pinned-tab.svg' rel="mask-icon" />
+  
+  
+  <link href='&#x2F;icons&#x2F;favicon-16x16.png' rel="icon" sizes="16x16" type="image/png" />
+  
+  
+  <link href='&#x2F;icons&#x2F;favicon-32x32.png' rel="icon" sizes="32x32" type="image/png" />
+  
+  
+  <link href='&#x2F;icons&#x2F;apple-touch-icon.png' rel="apple-touch-icon" sizes="180x180" />
+  
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/themes/folio/galleria.folio.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/mapbox-gl@2.1.1/dist/mapbox-gl.min.css" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" rel="stylesheet" />
+  <link href="https://softwareunicorns.com/deep-thought.css" rel="stylesheet" />
+
+  <title>
+    
+Software Unicorns | Flutter Tutorial: Development Environment Setup
+
+  </title>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CR6HY18MJR"></script>
+  <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-CR6HY18MJR");
+  </script>
+  
+
+  
+</head>
+
+<body class="has-background-white">
+  <nav aria-label="section navigation" class="navbar is-light" role="navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        
+        <a class="navbar-item is-size-5 has-text-weight-bold" href="https:&#x2F;&#x2F;softwareunicorns.com">Software Unicorns</a>
+        
+        <a aria-expanded="false" aria-label="menu" class="navbar-burger burger" data-target="navMenu" role="button">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-end has-text-centered">
+          
+          
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;softwareunicorns.com&#x2F;about">
+            About
+          </a>
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;softwareunicorns.com&#x2F;posts">
+            Posts
+          </a>
+          
+          
+          
+
+          
+
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+  
+
+  
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8 is-offset-2">
+        <article class="block">
+          <h1 class="title is-3">
+            Flutter Tutorial: Development Environment Setup
+          </h1>
+          <p class="subtitle is-5">For iOS and Android</p>
+          <div class="columns is-multiline is-gapless">
+            <div class="column is-8">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="fas fa-user"></i>
+  </span>
+  <span>
+    
+      Aaron Qian
+    
+  published on
+  </span>
+  <span class="icon">
+    <i class="far fa-calendar-alt"></i>
+  </span>
+  <span><time datetime="2021-10-12">October 12, 2021</time></span>
+</span>
+
+            </div>
+            <div class="column is-4 has-text-right-desktop">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="far fa-clock"></i>
+  </span>
+  <span>4 min,</span>
+  <span class="icon">
+    <i class="fas fa-pencil-alt"></i>
+  </span>
+  <span>785 words</span>
+</span>
+
+            </div>
+            <div class="column">
+              
+              
+<p>
+  Categories:
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="https://softwareunicorns.com/categories/flutter/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-cube"></i>
+      </span>
+      <span>flutter</span>
+    </span>
+  </a>
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="https://softwareunicorns.com/categories/dart/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-cube"></i>
+      </span>
+      <span>dart</span>
+    </span>
+  </a>
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="https://softwareunicorns.com/categories/mobile/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-cube"></i>
+      </span>
+      <span>mobile</span>
+    </span>
+  </a>
+  
+</p>
+
+              
+            </div>
+            <div class="column has-text-right-desktop">
+              
+            </div>
+          </div>
+          <div class="content mt-2">
+            <p>I have dabbled with <a href="https://dart.dev/">Dart</a> for some toy backend experiment when it first came out years ago, even before ES6 era. I really liked how it was typed and offer very nice IDE integrations, as well as its Stream support. </p>
+<p>With <a href="https://flutter.dev/">Flutter</a> overtaking <a href="https://reactnative.dev/">React Native</a> on Google Trends, I decided to dive head first and try to make a cross platform toy app that can run on iOS, Android and Web.</p>
+<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2674_RC03/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"/g/11f03_rzbg","geo":"US","time":"today 5-y"},{"keyword":"/g/11h03gfxy9","geo":"US","time":"today 5-y"}],"category":0,"property":""}, {"exploreQuery":"date=today%205-y&geo=US&q=%2Fg%2F11f03_rzbg,%2Fg%2F11h03gfxy9","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
+<h2 id="overview">Overview</h2>
+<p>This series of articles will walk you through my journey from setting up the development environment to various aspects of building a non-trivial app. Each  step of the way, I will document my findings in small, bite-sized articles for easy consumptions.</p>
+<p>In this article, I will cover setting up the development environment for both iOS and Android development. I'm assuming you are using the latest MacOS.</p>
+<p>This series of articles is broken down as the following:</p>
+<ul>
+<li>Development Environment Setup ( this article )</li>
+<li>Customizing Splash Screen and Logo</li>
+<li>Login Page with Firebase Auth</li>
+<li>Profile Page</li>
+</ul>
+<h2 id="install-xcode">Install XCode</h2>
+<p>Install <a href="https://apps.apple.com/us/app/xcode/id497799835?mt=12">XCode from the App Store</a> if you haven't done so.</p>
+<p>Next, you will need to install the XCode CommandLine Tools by running the following command in your terminal:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">xcode-select --install
+</span></code></pre>
+<h2 id="install-homebrew">Install HomeBrew</h2>
+<p><a href="https://brew.sh/">HomeBrew</a> is a package manager for MacOS. The installation is very simple, please go to https://brew.sh/ and follow the instructions there.</p>
+<p>Read the notes after installation and make sure your <code>.zshrc</code> or <code>.bash_profile</code> is properly configured. It's also helpful to run <code>brew doctor</code> to verify brew is installed correctly.</p>
+<h2 id="install-flutter">Install Flutter</h2>
+<p>The easiest way to install Flutter on macOS is probably by using HomeBrew.</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">brew</span><span> install</span><span style="color:#bf616a;"> --cask</span><span> flutter </span><span style="color:#65737e;"># install flutter
+</span></code></pre>
+<h2 id="install-android-studio">Install Android Studio</h2>
+<p>In order to compile Flutter App for Android, we need to install Android Studio. Again, this can be done with HomeBrew</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">brew</span><span> install</span><span style="color:#bf616a;"> --cask</span><span> android-studio
+</span></code></pre>
+<h2 id="install-java">Install Java</h2>
+<p>Android Studio needs Java 8 to compile. We are going to use OpenJDK. <a href="https://adoptium.net/">Temurin</a> is the successor to <a href="https://github.com/AdoptOpenJDK/homebrew-openjdk">AdoptOpenJDK</a> that provides prebuilt OpenJDK binaries, and is the recommended way to install OpenJDK by HomeBrew.</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">brew</span><span> install</span><span style="color:#bf616a;"> --cask</span><span> temurin8
+</span></code></pre>
+<h2 id="install-android-sdk-commandlinetools">Install Android SDK, CommandLineTools</h2>
+<p>Open Android Studio in the Apps folder and you will encounter the initial setup process. Select the standard setup, and complete the initial setup. By default this will download the Android SDK and Android Emulators.</p>
+<p>Once the initial setup is done. You need to open the <code>Preferences</code> menu, and navigate to: <code>Appearance And Behavior</code> -&gt; <code>System Settings</code> -&gt; <code>Android SDK</code>.</p>
+<ul>
+<li>In <code>SDK Platforms</code> tab, make sure the latest Android version ( 12 ) is checked.</li>
+<li>In <code>SDK Tools</code> tab, make sure you have the the following checked:
+<ul>
+<li>Android SDK Build-Tools 31</li>
+<li>Android SDK Command-line Tools (latest)</li>
+<li>Android Simulator</li>
+<li>Android SDK Platform-Tools</li>
+</ul>
+</li>
+</ul>
+<p>Finally, click Ok button and wait for installation to complete.</p>
+<h2 id="sanity-check">Sanity Check</h2>
+<p>Now it's time to see if we have setup everything correctly. In a terminal run:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">flutter</span><span> doctor
+</span></code></pre>
+<p>You should have everything green.</p>
+<h2 id="create-a-new-app">Create A New App</h2>
+<p>Now we have flutter setup, we can start by generating a skeleton app for our project. </p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">flutter</span><span> create software_unicorns
+</span></code></pre>
+<p>This will create a new project called <code>software_unicorns</code> . Change the project name to your liking.</p>
+<h2 id="run-the-new-app-on-ios-simulator">Run The New App on iOS Simulator</h2>
+<p>First open the iOS Simulator by either type in <code>Simulator</code> in Spotlight Search ( Cmd + Space ) or running <code>open -a Simulator</code> in terminal.</p>
+<p>Now, in the project directory, run the command below.</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">flutter</span><span> run </span><span style="color:#65737e;"># runs the new app
+</span></code></pre>
+<p>Wait for it to compile, it might take a while. After compilation is done, your iOS simulator should have the skeleton app running. </p>
+<h2 id="run-the-new-app-on-android-simulator">Run The New App on Android Simulator</h2>
+<p>First open Android Studio, then open the AVD Manager (Android Virtual Device Manager). You should have a default virtual device setup during installation.</p>
+<p>Now, in the project directory, run the command below.</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">flutter</span><span> run </span><span style="color:#65737e;"># runs the new app
+</span></code></pre>
+<p>Similarly as with iOS, it takes a long time to compile on first run. But once it's done, your app should show up on the simulated Android device.</p>
+<h2 id="what-s-next">What's next?</h2>
+<p>With the development environment setup, we can finally start building our app. But before that, let's customize our Splash Screen and Logo for both iOS and Android, and move onto Creating a Sign In Screen.</p>
+
+          </div>
+        </article>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+  
+  
+  
+
+
+  
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <nav class="level">
+           
+          <div class="level-item has-text-centered">
+            <a class="button is-black is-outlined" href="https:&#x2F;&#x2F;softwareunicorns.com&#x2F;posts&#x2F;messy-ui&#x2F;">
+              Messy UI? Here Is A Solution<span class="icon ml-2">
+                <i class="fas fa-arrow-circle-right"></i>
+              </span>
+            </a>
+          </div>
+            
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div id="disqus_thread"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  
+  <footer class="footer py-4">
+    <div class="content has-text-centered">
+      <p>
+        Built with
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-code"></i>
+          </span>
+          <span>code</span>
+        </span>
+        and
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-heart"></i>
+          </span>
+          <span>love</span>
+        </span>
+      </p>
+      <p>
+        Powered by
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-power-off"></i>
+          </span>
+          <span>zola</span>
+        </span>
+      </p>
+    </div>
+  </footer>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/galleria.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@8.9.2/dist/mermaid.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.xkcd@1.1.13/dist/chart.xkcd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mapbox-gl@2.1.1/dist/mapbox-gl.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/themes/folio/galleria.folio.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js"></script>
+  
+  <script src="https://softwareunicorns.com/js/site.js"></script>
+
+  
+
+
+
+<script>
+  var disqus_config = function () {
+    this.page.url = "https://softwareunicorns.com";
+    this.page.identifier = "/posts/flutter-development-environment-ios-and-android/";
+  };
+
+  (function () {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://softwareunicorns.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+
+
+</body>
+
+</html>

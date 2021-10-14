@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="#ffffff" name="theme-color" />
+  <meta content="#da532c" name="msapplication-TileColor" />
+
+  
+  <link href='&#x2F;icons&#x2F;site.webmanifest' rel="manifest" />
+  
+  
+  <link color="#5bbad5" href='&#x2F;icons&#x2F;safari-pinned-tab.svg' rel="mask-icon" />
+  
+  
+  <link href='&#x2F;icons&#x2F;favicon-16x16.png' rel="icon" sizes="16x16" type="image/png" />
+  
+  
+  <link href='&#x2F;icons&#x2F;favicon-32x32.png' rel="icon" sizes="32x32" type="image/png" />
+  
+  
+  <link href='&#x2F;icons&#x2F;apple-touch-icon.png' rel="apple-touch-icon" sizes="180x180" />
+  
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/themes/folio/galleria.folio.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/mapbox-gl@2.1.1/dist/mapbox-gl.min.css" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" rel="stylesheet" />
+  <link href="https://softwareunicorns.com/deep-thought.css" rel="stylesheet" />
+
+  <title>
+    
+Software Unicorns | Optimize Graphql Query Performance Using Data Loader
+
+  </title>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CR6HY18MJR"></script>
+  <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-CR6HY18MJR");
+  </script>
+  
+
+  
+</head>
+
+<body class="has-background-white">
+  <nav aria-label="section navigation" class="navbar is-light" role="navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        
+        <a class="navbar-item is-size-5 has-text-weight-bold" href="https:&#x2F;&#x2F;softwareunicorns.com">Software Unicorns</a>
+        
+        <a aria-expanded="false" aria-label="menu" class="navbar-burger burger" data-target="navMenu" role="button">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-end has-text-centered">
+          
+          
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;softwareunicorns.com&#x2F;about">
+            About
+          </a>
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;softwareunicorns.com&#x2F;posts">
+            Posts
+          </a>
+          
+          
+          
+
+          
+
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+  
+
+  
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8 is-offset-2">
+        <article class="block">
+          <h1 class="title is-3">
+            Optimize Graphql Query Performance Using Data Loader
+          </h1>
+          <p class="subtitle is-5">By Eliminate N+1 SQL Queries</p>
+          <div class="columns is-multiline is-gapless">
+            <div class="column is-8">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="fas fa-user"></i>
+  </span>
+  <span>
+    
+      Abner Qian
+    
+  published on
+  </span>
+  <span class="icon">
+    <i class="far fa-calendar-alt"></i>
+  </span>
+  <span><time datetime="2021-10-01">October 01, 2021</time></span>
+</span>
+
+            </div>
+            <div class="column is-4 has-text-right-desktop">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="far fa-clock"></i>
+  </span>
+  <span>5 min,</span>
+  <span class="icon">
+    <i class="fas fa-pencil-alt"></i>
+  </span>
+  <span>926 words</span>
+</span>
+
+            </div>
+            <div class="column">
+              
+              
+<p>
+  Categories:
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="https://softwareunicorns.com/categories/graphql/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-cube"></i>
+      </span>
+      <span>graphql</span>
+    </span>
+  </a>
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="https://softwareunicorns.com/categories/typescript/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-cube"></i>
+      </span>
+      <span>typescript</span>
+    </span>
+  </a>
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="https://softwareunicorns.com/categories/type-graphql/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-cube"></i>
+      </span>
+      <span>type-graphql</span>
+    </span>
+  </a>
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="https://softwareunicorns.com/categories/optimization/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-cube"></i>
+      </span>
+      <span>optimization</span>
+    </span>
+  </a>
+  
+</p>
+
+              
+            </div>
+            <div class="column has-text-right-desktop">
+              
+            </div>
+          </div>
+          <div class="content mt-2">
+            <p>While working on a project for a client, we came across an interesting twist to a common problem. We were tasked with making the API backend that powers a mobile app called <a href="https://www.playhouse.so/">Playhouse</a>, a mobile app that displays real estate listings to its users in a nice little video package. We decided to make a <a href="https://graphql.org/">GraphQL</a> API and got to building. During the design process, we made a point of keeping it maintainable for the long run.</p>
+<h2 id="application-architecture">Application Architecture</h2>
+<p>This backend is a <a href="https://nodejs.org/en/">Node.js</a> application with a <a href="https://www.postgresql.org/">PostgreSQL</a> database. Since we were also using <a href="https://www.typescriptlang.org/">TypeScript</a>, we decided to use <a href="https://typegraphql.com/">TypeGraphQL</a> to handle our GraphQL needs. Finally, one of the steps we took to improve maintainability was to use the dependency injection design pattern with the help of <a href="https://github.com/typestack/typedi">TypeDI</a>.</p>
+<h2 id="the-n-1-problem">The N+1 Problem</h2>
+<p>Those who have worked will GraphQL will likely be familiar with this problem already. When implementing a resolver for an object, if you just hit the database as soon as the resolver is called, you'll end up querying the database more than neccesary - sometimes a <em>lot</em> more than necessary.</p>
+<p>Let's take a look at an example. In our API, we have listings, comments, and users. A listing can have multiple comments, and the comments are authored by users. When looking up a listing, its comments, and the comments' authors, the GraphQL query would look something like this:</p>
+<pre data-lang="graphql" style="background-color:#2b303b;color:#c0c5ce;" class="language-graphql "><code class="language-graphql" data-lang="graphql"><span style="color:#b48ead;">query </span><span>{
+</span><span>  listing(</span><span style="color:#bf616a;">id</span><span>: </span><span style="color:#d08770;">123</span><span>) {
+</span><span>    id
+</span><span>    </span><span style="color:#65737e;"># ... a bunch of other fields
+</span><span>    comments {
+</span><span>      id
+</span><span>      body
+</span><span>      author {
+</span><span>        id
+</span><span>        username
+</span><span>      }
+</span><span>    }
+</span><span>  }
+</span><span>}
+</span></code></pre>
+<p>Let's take a look at what would happen if your comment's author resolver is written naively and looks up the user immediately.</p>
+<pre data-lang="typescript" style="background-color:#2b303b;color:#c0c5ce;" class="language-typescript "><code class="language-typescript" data-lang="typescript"><span>@</span><span style="color:#8fa1b3;">Resolver</span><span>(() </span><span style="color:#b48ead;">=&gt; </span><span style="color:#ebcb8b;">Comment</span><span>)
+</span><span style="color:#b48ead;">export class </span><span style="color:#ebcb8b;">CommentResolver </span><span style="color:#eff1f5;">{
+</span><span style="color:#eff1f5;">
+</span><span style="color:#eff1f5;">  </span><span style="color:#65737e;">// ... other resolvers
+</span><span style="color:#eff1f5;">
+</span><span style="color:#eff1f5;">  @</span><span style="color:#8fa1b3;">FieldResolver</span><span style="color:#eff1f5;">(</span><span>() </span><span style="color:#b48ead;">=&gt; </span><span style="color:#bf616a;">User</span><span style="color:#eff1f5;">)
+</span><span style="color:#eff1f5;">  </span><span style="color:#b48ead;">async </span><span style="color:#8fa1b3;">author</span><span>(
+</span><span style="color:#eff1f5;">    @</span><span style="color:#8fa1b3;">Root</span><span style="color:#eff1f5;">() { </span><span style="color:#bf616a;">authorId </span><span style="color:#eff1f5;">}</span><span>: </span><span style="color:#eff1f5;">Comment,
+</span><span style="color:#eff1f5;">  </span><span>): </span><span style="color:#eff1f5;">Promise&lt;User&gt; {
+</span><span style="color:#eff1f5;">    </span><span style="color:#b48ead;">const </span><span style="color:#bf616a;">user </span><span>= </span><span style="color:#b48ead;">await </span><span style="color:#8fa1b3;">db</span><span style="color:#eff1f5;">(</span><span>&#39;</span><span style="color:#a3be8c;">users</span><span>&#39;</span><span style="color:#eff1f5;">).</span><span style="color:#8fa1b3;">where</span><span style="color:#eff1f5;">({id: </span><span style="color:#bf616a;">authorId</span><span style="color:#eff1f5;">})[</span><span style="color:#d08770;">0</span><span style="color:#eff1f5;">]
+</span><span style="color:#eff1f5;">    </span><span style="color:#b48ead;">return </span><span style="color:#8fa1b3;">toSchema</span><span style="color:#eff1f5;">(</span><span style="color:#bf616a;">user</span><span style="color:#eff1f5;">, </span><span style="color:#bf616a;">User</span><span style="color:#eff1f5;">)
+</span><span style="color:#eff1f5;">  }
+</span><span style="color:#eff1f5;">}
+</span></code></pre>
+<p>In our application, we have a debug mode that outputs all the SQL queries that were used for every query that was run. This is what it outputs:</p>
+<pre data-lang="typescript" style="background-color:#2b303b;color:#c0c5ce;" class="language-typescript "><code class="language-typescript" data-lang="typescript"><span>{
+</span><span>  bindings: [ </span><span style="color:#d08770;">123 </span><span>],
+</span><span>  sql: &#39;</span><span style="color:#a3be8c;">select * from &quot;listings&quot; where &quot;id&quot; = ?</span><span>&#39;
+</span><span>}
+</span><span>{
+</span><span>  bindings: [ </span><span style="color:#d08770;">123 </span><span>],
+</span><span>  sql: &#39;</span><span style="color:#a3be8c;">select * from &quot;comments&quot; where &quot;listing_id&quot; = ?</span><span>&#39;
+</span><span>}
+</span><span>{
+</span><span>  bindings: [ </span><span style="color:#d08770;">5 </span><span>],
+</span><span>  sql: &#39;</span><span style="color:#a3be8c;">select * from &quot;users&quot; where &quot;id&quot; = ?</span><span>&#39;
+</span><span>}
+</span><span>{
+</span><span>  bindings: [ </span><span style="color:#d08770;">12 </span><span>],
+</span><span>  sql: &#39;</span><span style="color:#a3be8c;">select * from &quot;users&quot; where &quot;id&quot; = ?</span><span>&#39;
+</span><span>}
+</span><span>{
+</span><span>  bindings: [ </span><span style="color:#d08770;">1 </span><span>],
+</span><span>  sql: &#39;</span><span style="color:#a3be8c;">select * from &quot;users&quot; where &quot;id&quot; = ?</span><span>&#39;
+</span><span>}
+</span><span>{
+</span><span>  bindings: [ </span><span style="color:#d08770;">19 </span><span>],
+</span><span>  sql: &#39;</span><span style="color:#a3be8c;">select * from &quot;users&quot; where &quot;id&quot; = ?</span><span>&#39;
+</span><span>}
+</span></code></pre>
+<p>As you can see, there are four identical select statements on the users table where only the bindings change. This is because there are four comments on the listing and each comment calls the author resolver and makes its own database query. As the number of comments increases, the number of database queries would also increase. This is a huge performance issue.</p>
+<h2 id="data-loaders">Data Loaders</h2>
+<p>Using the example above, Data Loaders will collect the individual user IDs in the resolver and fetch the collected user IDs in one SQL query after <a href="https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/">nextTick</a>. It will then return the appropriate User object based on the supplied user ID.</p>
+<p>We decided to use the excellent and well supported <a href="https://github.com/graphql/dataloader"><code>dataloader</code></a> package in our project. We then created a <code>SimpleLoader</code> to interface with our Repositories, which are responsible for loading Database Models in batch. Here is the code:</p>
+<pre data-lang="typescript" style="background-color:#2b303b;color:#c0c5ce;" class="language-typescript "><code class="language-typescript" data-lang="typescript"><span style="color:#65737e;">// utils/SimpleLoader.ts
+</span><span style="color:#b48ead;">import </span><span style="color:#bf616a;">DataLoader </span><span style="color:#b48ead;">from </span><span>&#39;</span><span style="color:#a3be8c;">dataloader</span><span>&#39;
+</span><span>
+</span><span style="color:#b48ead;">export interface </span><span>Identifiable {
+</span><span>  </span><span style="color:#bf616a;">id</span><span>: string
+</span><span>}
+</span><span>
+</span><span style="color:#b48ead;">export interface </span><span>GetBatch&lt;T </span><span style="color:#b48ead;">extends </span><span>Identifiable&gt; {
+</span><span>  </span><span style="color:#8fa1b3;">getBatch</span><span>: (</span><span style="color:#bf616a;">ids</span><span>: </span><span style="color:#b48ead;">readonly </span><span>string[]) </span><span style="color:#b48ead;">=&gt; </span><span>Promise&lt;T[]&gt;
+</span><span>}
+</span><span>
+</span><span style="color:#b48ead;">export class </span><span style="color:#ebcb8b;">SimpleLoader</span><span style="color:#eff1f5;">&lt;T </span><span style="color:#b48ead;">extends </span><span style="color:#eff1f5;">Identifiable&gt; {
+</span><span style="color:#eff1f5;">  </span><span style="color:#b48ead;">private readonly </span><span style="color:#bf616a;">loader</span><span>: </span><span style="color:#eff1f5;">DataLoader&lt;string, T&gt;
+</span><span style="color:#eff1f5;">
+</span><span style="color:#eff1f5;">  </span><span style="color:#b48ead;">constructor</span><span>(</span><span style="color:#b48ead;">protected readonly </span><span style="color:#bf616a;">repo</span><span>: </span><span style="color:#eff1f5;">GetBatch&lt;T&gt;</span><span>) </span><span style="color:#eff1f5;">{
+</span><span style="color:#eff1f5;">    </span><span style="color:#bf616a;">this</span><span style="color:#eff1f5;">.</span><span style="color:#bf616a;">loader </span><span>= new </span><span style="color:#eff1f5;">DataLoader&lt;string, T&gt;(</span><span style="color:#bf616a;">this</span><span style="color:#eff1f5;">.</span><span style="color:#bf616a;">loadBatch</span><span style="color:#eff1f5;">.</span><span style="color:#8fa1b3;">bind</span><span style="color:#eff1f5;">(</span><span style="color:#bf616a;">this</span><span style="color:#eff1f5;">))
+</span><span style="color:#eff1f5;">  }
+</span><span style="color:#eff1f5;">
+</span><span style="color:#eff1f5;">  </span><span style="color:#b48ead;">async </span><span style="color:#8fa1b3;">load</span><span>(</span><span style="color:#bf616a;">id</span><span>: </span><span style="color:#eff1f5;">string</span><span>): </span><span style="color:#eff1f5;">Promise&lt;T&gt; {
+</span><span style="color:#eff1f5;">    </span><span style="color:#b48ead;">return await </span><span style="color:#bf616a;">this</span><span style="color:#eff1f5;">.</span><span style="color:#bf616a;">loader</span><span style="color:#eff1f5;">.</span><span style="color:#96b5b4;">load</span><span style="color:#eff1f5;">(</span><span style="color:#bf616a;">id</span><span style="color:#eff1f5;">)
+</span><span style="color:#eff1f5;">  }
+</span><span style="color:#eff1f5;">
+</span><span style="color:#eff1f5;">  </span><span style="color:#b48ead;">private async </span><span style="color:#8fa1b3;">loadBatch</span><span>(</span><span style="color:#bf616a;">keys</span><span>: </span><span style="color:#b48ead;">readonly </span><span style="color:#eff1f5;">string[]</span><span>): </span><span style="color:#eff1f5;">Promise&lt;T[]&gt; {
+</span><span style="color:#eff1f5;">    </span><span style="color:#b48ead;">const </span><span style="color:#bf616a;">objects </span><span>= </span><span style="color:#b48ead;">await </span><span style="color:#bf616a;">this</span><span style="color:#eff1f5;">.</span><span style="color:#bf616a;">repo</span><span style="color:#eff1f5;">.</span><span style="color:#8fa1b3;">getBatch</span><span style="color:#eff1f5;">(</span><span style="color:#bf616a;">keys</span><span style="color:#eff1f5;">)
+</span><span style="color:#eff1f5;">    </span><span style="color:#b48ead;">const </span><span style="color:#bf616a;">lookup </span><span>= </span><span style="color:#bf616a;">objects</span><span style="color:#eff1f5;">.</span><span style="color:#8fa1b3;">reduce</span><span style="color:#eff1f5;">&lt;Record&lt;string, T&gt;&gt;(</span><span>(</span><span style="color:#bf616a;">acc</span><span style="color:#eff1f5;">, </span><span style="color:#bf616a;">object</span><span>) </span><span style="color:#b48ead;">=&gt; </span><span style="color:#eff1f5;">{
+</span><span style="color:#eff1f5;">      </span><span style="color:#bf616a;">acc</span><span style="color:#eff1f5;">[</span><span style="color:#bf616a;">object</span><span style="color:#eff1f5;">.id] </span><span>= </span><span style="color:#bf616a;">object
+</span><span style="color:#eff1f5;">      </span><span style="color:#b48ead;">return </span><span style="color:#bf616a;">acc
+</span><span style="color:#eff1f5;">    }, {})
+</span><span style="color:#eff1f5;">    </span><span style="color:#b48ead;">return </span><span style="color:#bf616a;">keys</span><span style="color:#eff1f5;">.</span><span style="color:#8fa1b3;">map</span><span style="color:#eff1f5;">(</span><span>(</span><span style="color:#bf616a;">key</span><span>) </span><span style="color:#b48ead;">=&gt; </span><span style="color:#bf616a;">lookup</span><span style="color:#eff1f5;">[</span><span style="color:#bf616a;">key</span><span style="color:#eff1f5;">])
+</span><span style="color:#eff1f5;">  }
+</span><span style="color:#eff1f5;">}
+</span></code></pre>
+<p>There are two interfaces here. </p>
+<p>The <code>Identifiable</code> interface is meant to be implemented on the Model. It ensures the <code>id</code> method is available for sorting the returned Models based on the order of the <code>keys</code> input argument in <code>loadBatch</code> method.</p>
+<p>The <code>GetBatch</code> interface is meant to be implemented on the Repository. We use <code>getBatch</code> method to fetch Models all in one go.</p>
+<p>For each Model &amp; Repository pair, we will create a new <code>SimpleLoader</code>. Using the User example above, we define a <code>UserLoader</code> like this:</p>
+<pre data-lang="typescript" style="background-color:#2b303b;color:#c0c5ce;" class="language-typescript "><code class="language-typescript" data-lang="typescript"><span style="color:#b48ead;">import </span><span>{ </span><span style="color:#bf616a;">Service </span><span>} </span><span style="color:#b48ead;">from </span><span>&#39;</span><span style="color:#a3be8c;">typedi</span><span>&#39;
+</span><span style="color:#b48ead;">import </span><span>{ </span><span style="color:#bf616a;">SimpleLoader </span><span>} </span><span style="color:#b48ead;">from </span><span>&#39;</span><span style="color:#a3be8c;">../utils/SimpleLoader</span><span>&#39;
+</span><span style="color:#b48ead;">import </span><span>{ </span><span style="color:#bf616a;">UserRepository </span><span>} </span><span style="color:#b48ead;">from </span><span>&#39;</span><span style="color:#a3be8c;">../repositories</span><span>&#39;
+</span><span>
+</span><span>@</span><span style="color:#8fa1b3;">Service</span><span>()
+</span><span style="color:#b48ead;">export class </span><span style="color:#ebcb8b;">UserLoader </span><span style="color:#b48ead;">extends </span><span style="color:#a3be8c;">SimpleLoader</span><span style="color:#eff1f5;">&lt;Domain.User&gt; {
+</span><span style="color:#eff1f5;">  </span><span style="color:#b48ead;">constructor</span><span>(</span><span style="color:#b48ead;">protected readonly </span><span style="color:#bf616a;">repo</span><span>: </span><span style="color:#eff1f5;">UserRepository</span><span>) </span><span style="color:#eff1f5;">{
+</span><span style="color:#eff1f5;">    </span><span style="color:#bf616a;">super</span><span style="color:#eff1f5;">(</span><span style="color:#bf616a;">repo</span><span style="color:#eff1f5;">)
+</span><span style="color:#eff1f5;">  }
+</span><span style="color:#eff1f5;">}
+</span></code></pre>
+<p>We are using <a href="https://github.com/typestack/typedi"><code>typedi</code></a> for <a href="https://www.jamesshore.com/v2/blog/2006/dependency-injection-demystified">Dependency Injection</a>. We also used a feature in <code>typedi</code>, called <a href="https://docs.typestack.community/typedi/v/develop/#using-multiple-containers-and-scoped-containers">Scoped Containers</a> to ensure each new GraphQL request will have its own empty container for dependency injections. This is a topic for another time. The TL;DR reason for this setup is to ensure a new instance of <code>UserLoader</code> is created in the beginning of the request and is thrown away when the request is complete. This is important because <code>dataloader</code> performs <a href="https://github.com/graphql/dataloader#caching">caching</a>, and recommend to initialize it during request initialization and throw it away after a request is complete.</p>
+<p>To use the <code>UserLoader</code>, all you have to do in your resolver is this:</p>
+<pre data-lang="typescript" style="background-color:#2b303b;color:#c0c5ce;" class="language-typescript "><code class="language-typescript" data-lang="typescript"><span style="color:#b48ead;">import </span><span>{ </span><span style="color:#bf616a;">Service </span><span>} </span><span style="color:#b48ead;">from </span><span>&#39;</span><span style="color:#a3be8c;">typedi</span><span>&#39;
+</span><span style="color:#b48ead;">import </span><span>{ </span><span style="color:#bf616a;">UserLoader </span><span>} </span><span style="color:#b48ead;">from </span><span>&#39;</span><span style="color:#a3be8c;">../loaders</span><span>&#39;
+</span><span>
+</span><span>@</span><span style="color:#8fa1b3;">Service</span><span>()
+</span><span style="color:#b48ead;">export class </span><span style="color:#ebcb8b;">CommentResolver </span><span style="color:#eff1f5;">{
+</span><span style="color:#eff1f5;">  </span><span style="color:#b48ead;">constructor</span><span>(
+</span><span style="color:#eff1f5;">    </span><span style="color:#b48ead;">private readonly </span><span style="color:#bf616a;">loader</span><span>: </span><span style="color:#eff1f5;">UserLoader,
+</span><span style="color:#eff1f5;">    </span><span style="color:#65737e;">// a bunch of other injected services
+</span><span style="color:#eff1f5;">  </span><span>) </span><span style="color:#eff1f5;">{}
+</span><span style="color:#eff1f5;">
+</span><span style="color:#eff1f5;">  </span><span style="color:#b48ead;">async </span><span style="color:#8fa1b3;">user</span><span>(
+</span><span style="color:#eff1f5;">    @</span><span style="color:#8fa1b3;">Root</span><span style="color:#eff1f5;">() </span><span style="color:#bf616a;">comment</span><span>: </span><span style="color:#eff1f5;">Comment,
+</span><span style="color:#eff1f5;">  </span><span>): </span><span style="color:#eff1f5;">Promise&lt;Domain.Listing&gt; {
+</span><span style="color:#eff1f5;">    </span><span style="color:#65737e;">// using the loader here
+</span><span style="color:#eff1f5;">    </span><span style="color:#b48ead;">return await </span><span style="color:#bf616a;">this</span><span style="color:#eff1f5;">.</span><span style="color:#bf616a;">loader</span><span style="color:#eff1f5;">.</span><span style="color:#96b5b4;">load</span><span style="color:#eff1f5;">(</span><span style="color:#bf616a;">comment</span><span style="color:#eff1f5;">.</span><span style="color:#bf616a;">authorId</span><span style="color:#eff1f5;">)
+</span><span style="color:#eff1f5;">  }
+</span><span style="color:#eff1f5;">}
+</span></code></pre>
+
+          </div>
+        </article>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+  
+  
+  
+
+
+  
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <nav class="level">
+          
+          <div class="level-item has-text-centered">
+            <a class="button is-black is-outlined" href="https:&#x2F;&#x2F;softwareunicorns.com&#x2F;posts&#x2F;messy-ui&#x2F;">
+              <span class="icon mr-2">
+                <i class="fas fa-arrow-circle-left"></i>
+              </span>
+              Messy UI? Here Is A Solution
+            </a>
+          </div>
+           
+          <div class="level-item has-text-centered">
+            <a class="button is-black is-outlined" href="https:&#x2F;&#x2F;softwareunicorns.com&#x2F;posts&#x2F;google-wellbeing-manifesto&#x2F;">
+              Mental Health Is Your Priority Number One<span class="icon ml-2">
+                <i class="fas fa-arrow-circle-right"></i>
+              </span>
+            </a>
+          </div>
+            
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div id="disqus_thread"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  
+  <footer class="footer py-4">
+    <div class="content has-text-centered">
+      <p>
+        Built with
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-code"></i>
+          </span>
+          <span>code</span>
+        </span>
+        and
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-heart"></i>
+          </span>
+          <span>love</span>
+        </span>
+      </p>
+      <p>
+        Powered by
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-power-off"></i>
+          </span>
+          <span>zola</span>
+        </span>
+      </p>
+    </div>
+  </footer>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/galleria.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@8.9.2/dist/mermaid.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.xkcd@1.1.13/dist/chart.xkcd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mapbox-gl@2.1.1/dist/mapbox-gl.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/themes/folio/galleria.folio.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js"></script>
+  
+  <script src="https://softwareunicorns.com/js/site.js"></script>
+
+  
+
+
+
+<script>
+  var disqus_config = function () {
+    this.page.url = "https://softwareunicorns.com";
+    this.page.identifier = "/posts/graphql-typedi-data-loaders-and-scoped-containers/";
+  };
+
+  (function () {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://softwareunicorns.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+
+
+</body>
+
+</html>
