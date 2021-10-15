@@ -10,10 +10,6 @@ tags:
   - flutter
   - dart
   - mobile
-
-# resources:
-#   - name: featured-image
-#     src: featured-image.png
 ---
 
 

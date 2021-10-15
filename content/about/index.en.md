@@ -1,7 +1,9 @@
-+++
-title = "About"
-description = ""
-+++
+---
+title: About Me
+description: Hi, I'm Aaron Qian
+comment:
+  enable: false
+---
 
 Hi, I'm Aaron Qian.
 

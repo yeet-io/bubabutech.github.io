@@ -1,11 +1,13 @@
-+++
-title="Mental Health Is Your Priority Number One"
-description="Checkout Google's Wellbeing Manifest"
-date=2021-09-23
-categories = ["mental health"]
-tags = ["google"]
-toc = false
-+++
+---
+title: Mental Health Is Your Priority Number One
+description: Google's Wellbeing Manifest
+date: 2021-09-23
+toc: false
+categories:
+  - mental health
+tags: 
+  - google
+---
 
 Whether you are a Software Pony or Software Unicorn, **mental health is priority number one**.
 

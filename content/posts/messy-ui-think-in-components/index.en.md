@@ -1,9 +1,10 @@
-+++
-title="Messy UI? Here Is A Solution"
-description="Think In Components, Not HTML & CSS"
-date=2021-10-04
-categories = ["frontend", "design", "process"]
-+++
+---
+title: Messy UI? Here Is A Solution
+description: Think In Components, Not HTML & CSS
+date: 2021-10-04
+categories:
+  - development process
+---
 
 
 Have you ever heard a designer telling a developer:

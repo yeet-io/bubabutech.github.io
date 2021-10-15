@@ -1,10 +1,16 @@
-+++
-title="Optimize Graphql Query Performance Using Data Loader"
-description="By Eliminate N+1 SQL Queries"
-date=2021-10-01
-categories = ["backend", "optimization"]
-tags = ["graphql", "typescript", "type-graphql", "typdi"]
-+++
+---
+title: Optimize Graphql Query Performance Using Data Loader
+description: By Eliminate N+1 SQL Queries
+date: 2021-10-01
+categories:
+  - backend
+tags:
+  - graphql
+  - typescript
+  - type-graphql
+  - typdi
+  - optimization
+---
 
 While working on a project for a client, we came across an interesting twist to a common problem. We were tasked with making the API backend that powers a mobile app called [Playhouse](https://www.playhouse.so/), a mobile app that displays real estate listings to its users in a nice little video package. We decided to make a [GraphQL](https://graphql.org/) API and got to building. During the design process, we made a point of keeping it maintainable for the long run.
 
