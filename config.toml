@@ -7,10 +7,11 @@ theme = "LoveIt"
 [params]
   version = "0.2.X"
   keywords = [
-    "software development", 
+    "software development",
     "software consulting",
     "software engineering"
   ]
+  images = ["/images/aaronqian.png"]
 
   [params.app]
     svgFavicon = ""
@@ -19,6 +20,15 @@ theme = "LoveIt"
     [params.header.title]
       logo = "/logo.svg"
       name = "Software Unicorns"
+
+  [params.footer]
+    enable = true
+    custom = ''
+    hugo = false
+    copyright = true
+    author = true
+    since = 2021
+    license= '<a rel="license external nofollow noopener noreffer" href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>'
 
   [params.home]
     # LoveIt NEW | 0.2.0 amount of RSS pages
@@ -60,13 +70,13 @@ theme = "LoveIt"
       Twitter = true
       Facebook = true
       Linkedin = true
-    
+
     [params.page.comment]
       enable = true
       [params.page.comment.disqus]
         enable = true
         shortname = "softwareunicorns"
-  
+
   [params.analytics]
     enable = true
     [params.analytics.google]
@@ -76,7 +86,7 @@ theme = "LoveIt"
 [author]
   name = "Aaron Qian"
   email = "aaron@bubabutech.com"
-  link = "/about"
+  link = "/about/"
 
 [menu]
   [[menu.main]]
@@ -84,7 +94,7 @@ theme = "LoveIt"
     pre = ""
     post = ""
     name = "About"
-    url = "/about"
+    url = "/about/"
     title = ""
     weight = 1
   [[menu.main]]
