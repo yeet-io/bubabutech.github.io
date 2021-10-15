@@ -1,3 +1,0 @@
-{% set data = load_data(url="https://publish.twitter.com/oembed?url=" ~ url, format='json') %}
-
-{{ data.html | safe }}

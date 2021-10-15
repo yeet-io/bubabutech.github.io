@@ -2,15 +2,19 @@
 title="Messy UI? Here Is A Solution"
 description="Think In Components, Not HTML & CSS"
 date=2021-10-04
-
-[taxonomies]
-categories = ["strategies"]
+categories = ["frontend", "design", "process"]
 +++
 
 
 Have you ever heard a designer telling a developer:
 
-> Your margin on this widget is 3 pixels off, the font size on this button is too big, the font color is not right shade, and the text didn't change color when hovering over the button.
+{{< admonition type=quote title="Designer says" open=true >}}
+Your margin on this widget is 3 pixels off.
+The font size on this button is too big. 
+The font color is not right shade.
+The text didn't change color when hovering over the button.
+{{< /admonition >}}
+
 
 The designer have to make sure his design is always consistent, or else the developer is going to implement it inconsistently. The designer will have to double check the developer's work to ensure the final product is correct. The developer will have to adjust his CSS and HTML to make it pass the Design Team, but occasionally, his changes break another page because he didn't know changing the CSS in one spot could affect some widget in a completely different page. And the cycle repeats itself.
 

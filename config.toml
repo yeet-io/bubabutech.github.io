@@ -1,64 +1,120 @@
-base_url = "https://softwareunicorns.com"
-taxonomies = [
-    { name = "categories" },
-]
-
-[languages.en]
-compile_sass = true
-build_search_index = false
+baseURL = "https://softwareunicorns.com/"
+defaultContentLanguage = "en"
+languageCode = "en"
 title = "Software Unicorns"
+theme = "LoveIt"
 
+[params]
+  version = "0.2.X"
+  keywords = [
+    "software development", 
+    "software consulting",
+    "software engineering"
+  ]
 
-[markdown]
-highlight_code = true
+  [params.app]
+    svgFavicon = ""
 
-[extra]
-navbar_items = [
- { code = "en", nav_items = [
-  { url = "$BASE_URL/about", name = "About" },
-  { url = "$BASE_URL/daily-tips", name = "Daily Tips" },
- ]},
-]
+  [params.header]
+    [params.header.title]
+      logo = "/logo.svg"
+      name = "Software Unicorns"
 
-toggle_dark_theme = false
+  [params.home]
+    # LoveIt NEW | 0.2.0 amount of RSS pages
+    rss = 10
+    # Home page profile
+    [params.home.profile]
+      enable = true
+      avatarURL = "/images/aaronqian.png"
+      title = "Hi, I'm Aaron Qian"
+      subtitle = "I Solve Difficult Software Problems"
+      typeit = true
+      social = true
 
-# Add links to favicon, you can use https://realfavicongenerator.net/ to generate favicon for your site
-[extra.favicon]
-favicon_16x16 = "/icons/favicon-16x16.png"
-favicon_32x32 = "/icons/favicon-32x32.png"
-apple_touch_icon = "/icons/apple-touch-icon.png"
-safari_pinned_tab = "/icons/safari-pinned-tab.svg"
-webmanifest = "/icons/site.webmanifest"
+  [params.social]
+    GitHub = "aq1018"
+    Linkedin = "aaronqian"
+    Twitter = "aq1018"
+    Facebook = "aaron.qian.9"
+    Stackoverflow = "86288"
+    Email = "aaron@bubabutech.com"
+    RSS = true
 
-# Author details
-[extra.author]
-name = "Aaron Qian"
-avatar = "/images/aaronqian.png"
+  [params.section]
+    paginate = 10
+    dateFormat = "01/02"
+    rss = 10
 
-# Social links
-[extra.social]
-email = "aaron@bubabutech.com"
-facebook = "aaron.qian.9"
-github = "aq1018"
-# gitlab = "<gitlab_username>"
-# keybase = "<keybase_username>"
-linkedin = "aaronqian"
-stackoverflow = "86288"
-twitter = "aq1018"
-# instagram = "<instagram_usernaem>"
-# behance = "<behance_username>"
-# google_scholar = "<googlescholar_userid>"
-# orcid = "<orcid_userid>"
+  [params.list]
+    paginate = 10
+    dateFormat = "01/02"
+    rss = 10
 
+  [params.page]
+    [params.page.code]
+      maxShownLines = 500
 
-# To add google analytics
-[extra.analytics]
-google = "G-CR6HY18MJR"
+    [params.page.share]
+      enable = true
+      Twitter = true
+      Facebook = true
+      Linkedin = true
+    
+    [params.page.comment]
+      enable = true
+      [params.page.comment.disqus]
+        enable = true
+        shortname = "softwareunicorns"
+  
+  [params.analytics]
+    enable = true
+    [params.analytics.google]
+      id = "G-CR6HY18MJR"
+      anonymizeIP = true
 
-# To add disqus comments
-[extra.commenting]
-disqus = "<your_disqus_shortname>"
+[author]
+  name = "Aaron Qian"
+  email = "aaron@bubabutech.com"
+  link = "/about"
 
-# To enable mapbox maps
-[extra.mapbox]
-access_token = "<your_access_token>"
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    pre = ""
+    post = ""
+    name = "About"
+    url = "/about"
+    title = ""
+    weight = 1
+  [[menu.main]]
+    identifier = "posts"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    # title will be shown when you hover on this menu link
+    title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "Tags"
+    url = "/tags/"
+    title = ""
+    weight = 3
+  [[menu.main]]
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = ""
+    weight = 4
+
+[markup]
+  [markup.highlight]
+    noClasses = false

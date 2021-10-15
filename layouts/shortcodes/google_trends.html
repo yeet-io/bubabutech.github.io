@@ -1,0 +1,23 @@
+{{ $keywords := split (.Get "keywords") "," }}
+{{ $geo := .Get "geo" | default "US" }}
+{{ $start := .Get "start" | default "today" }}
+{{ $range := .Get "range" | default "12-m" }}
+
+
+<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2674_RC03/embed_loader.js"></script> 
+<script type="text/javascript">
+trends.embed.renderExploreWidget(
+  "TIMESERIES", {
+    "comparisonItem":[
+    {{ range $keywords }}
+      {
+        "keyword":"{{ . | safeURL }}",
+        "geo":"{{ $geo }}",
+        "time":"{{ $start }} {{ $range }}"
+      },
+    {{ end }}
+    ],
+    "category": 0,
+    "property":""
+  }); 
+</script>

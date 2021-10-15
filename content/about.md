@@ -3,8 +3,6 @@ title = "About"
 description = ""
 +++
 
-{% section() %}
-
 Hi, I'm Aaron Qian.
 
 **I help software engineers achieve career goals.** I believe there are often overlooked, but effective ways to advance your career without burning yourself out.
@@ -14,5 +12,3 @@ I'm a software engineer coach, a veteran software architect, and a custom softwa
 On this site, you will find my daily tips that will help you grow as a software engineer quickly and effectively. These tips will include a mix of technical and nontechnical topics. 
 
 I hope my lifetime of learnings in the software industry can be a small beacon to guide you on the misty landscape of software career.
-
-{% end %}

@@ -1,16 +1,15 @@
 +++
 title="Mental Health Is Your Priority Number One"
+description="Checkout Google's Wellbeing Manifest"
 date=2021-09-23
-
-[taxonomies]
-categories = ["wellbeing"]
+categories = ["mental health"]
+tags = ["google"]
+toc = false
 +++
 
 Whether you are a Software Pony or Software Unicorn, **mental health is priority number one**.
 
-<!-- more -->
-
-{{ twitter(url="https://twitter.com/gavinoattes/status/1429328421256155142") }}
+{{< tweet 1429328421256155142 >}}
 
 
 In the post COVID-19 era, yes, it's really ok. Take it easy. ✌️

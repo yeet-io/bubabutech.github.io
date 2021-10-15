@@ -8,11 +8,26 @@ on:
 jobs:
   zola:
     runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - name: 📂 checkout
         uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: 🚀 build & deploy
-        uses: shalzz/zola-deploy-action@master
-        env:
-          TOKEN: ${{ secrets.ZOLA_DEPLOY_TOKEN }}
+      - name: 🏗️ Setup
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: 🔨 Build
+        run: hugo --minify
+
+      - name: 🚀 Ship It
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
