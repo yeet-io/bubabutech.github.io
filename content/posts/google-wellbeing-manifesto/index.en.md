@@ -7,9 +7,14 @@ categories:
   - mental health
 tags: 
   - google
+resources:
+  - name: "featured-image"
+    src: "featured-image.png"
 ---
 
-Whether you are a Software Pony or Software Unicorn, **mental health is priority number one**.
+Whether you are a Software Pony or Software Unicorn, mental health is priority number one.
+
+<!--more-->
 
 {{< tweet 1429328421256155142 >}}
 

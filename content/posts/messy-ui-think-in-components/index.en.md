@@ -1,19 +1,27 @@
 ---
-title: Messy UI? Here Is A Solution
-description: Think In Components, Not HTML & CSS
+title: Messy UI? Think In Components, Not HTML & CSS
+description: Achieve consistent UI with Design Systems and Component Libraries.
 date: 2021-10-04
 categories:
   - development process
+resources:
+  - name: "featured-image"
+    src: "featured-image.png"
 ---
 
+<!--more-->
 
-Have you ever heard a designer telling a developer:
+Have you ever heard something like this?
 
-{{< admonition type=quote title="Designer says" open=true >}}
+{{< admonition quote Designer >}}
 Your margin on this widget is 3 pixels off.
+
 The font size on this button is too big. 
+
 The font color is not right shade.
+
 The text didn't change color when hovering over the button.
+
 {{< /admonition >}}
 
 
@@ -23,7 +31,11 @@ This kind of communication very inefficient for both the design team and the dev
 
 Now let's imagine a different conversation:
 
-> This widget uses the **PricingPlan Component**. That button is a **Button Component** with **secondary variant** and **small size**.
+{{< admonition quote Designer >}}
+This widget uses the **PricingPlan Component**. 
+
+That button is a **Button Component** with **secondary variant** and **small size**.
+{{< /admonition >}}
 
 The conversation is no longer about specific sizes in pixels or colors in hex. The designer and the developer both have a common language, and that language is call the **Design Language**. The specific margins, color shades, and sizes are predefined and agreed upon. 
 
@@ -33,10 +45,11 @@ This is all thanks to a **Design System** shared between the design and developm
 
 ## What is a Design System?
 
-So what is a Design System? Quoting from Wikipedia:
+So what is a Design System?
 
-> A Design System is a set of interconnected patterns and shared practices coherently organized. Design Systems aid in digital product design and development of products such as apps or websites. They may contain, but are not limited to, pattern libraries, design languages, style guides, coded components, brand languages, and documentation.
-> 
+{{< admonition quote "From Wikipedia" >}}
+A Design System is a set of interconnected patterns and shared practices coherently organized. Design Systems aid in digital product design and development of products such as apps or websites. They may contain, but are not limited to, pattern libraries, design languages, style guides, coded components, brand languages, and documentation.
+{{< /admonition >}}
 
 To put it in simpler terms, a Design System allows designers and developers communicate efficiently.
 

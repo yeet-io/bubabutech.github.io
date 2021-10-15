@@ -1,7 +1,9 @@
 ---
-title: Optimize Graphql Query Performance Using Data Loader
-description: By Eliminate N+1 SQL Queries
+title: Graphql Performance Optimization
+description: Eliminate N+1 Database Queries in GraphQL with Data Loader.
 date: 2021-10-01
+author: Abner Qian
+authorLink: https://github.com/Blargel
 categories:
   - backend
 tags:
@@ -10,7 +12,12 @@ tags:
   - type-graphql
   - typdi
   - optimization
+resources:
+  - name: "featured-image"
+    src: "featured-image.png"
 ---
+
+<!--more-->
 
 While working on a project for a client, we came across an interesting twist to a common problem. We were tasked with making the API backend that powers a mobile app called [Playhouse](https://www.playhouse.so/), a mobile app that displays real estate listings to its users in a nice little video package. We decided to make a [GraphQL](https://graphql.org/) API and got to building. During the design process, we made a point of keeping it maintainable for the long run.
 
